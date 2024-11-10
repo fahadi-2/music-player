@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body background color ="black">
+    <div class="container">
+        <div class="music-player">
+            <div class="album-art">
+                <img src="default albumart.jpg" alt="Album Art" id="albumArt">
+            </div>
+            <div class="song-details">
+                <h2 id="songTitle">Song Title</h2>
+                <p id="artistName">Artist Name</p>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prevBtn" class="control-btn"><i class="fas fa-backward"></i></button>
+                <button id="playBtn" class="control-btn"><i class="fas fa-play"></i></button>
+                <button id="nextBtn" class="control-btn"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

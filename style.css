@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-player {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.album-art {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-details {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.song-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress {
+    background: #4169e1;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-btn {
+    background: #4169e1;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.control-btn:hover {
+    transform: scale(1.1);
+    background: #2850c8;
+}
